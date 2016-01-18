@@ -1,0 +1,63 @@
+Guida essenziale
+
+	Scaricare Github dal sito https://desktop.github.com
+	Installare il pacchetto
+	
+
+	Nella cartella documenti viene creata una cartella Github
+
+	Aprire Git Shell
+
+	TUTTI I COMANDI SI SCRIVONO RISPETTANDO LE MAIUSCOLE E GLI SPAZI, SI CONFERMA PREMENDO INVIO
+
+	Nelle seguenti istruzioni quando si va a capo si è premuto invio
+	
+	
+
+Comandi base  (Facoltativi ma utili)
+
+	pwd                          -----    Scrive la cartella in cui ci si trova
+	dir                          -----    Scrive il contenuto della cartella
+	cd  nome_cartella            -----    Entra nella cartella col nome "nome_cartella" (Bisogna scrivere 
+	                                      il nome della cartella al posto di "nome_cartella
+	cd ..                        -----    Entra nella certella che contiene quella corrente
+
+
+Come ottenere il lavoro per la prima volta
+
+Si usano i comandi:
+
+	git clone percorso CaffèScienza
+	git fetch
+
+	Troverete nella cartella github una cartella chiamata CaffeScienza. Inserite i vostri file lì.
+	INSERIRE UN FILE NELLA CARTELLA NON EQUIVALE A PUBBLICARLO	
+
+Come aggiornare la raccolta
+
+	git fetch
+
+
+Come pubblicare file
+
+Si mette il file nella cartella desiderata
+
+Si apre Git Shell
+
+Si usano i comandi:
+	cd CaffeScienza
+	git fetch
+	git checkout master
+	git merge origin/master
+	git checkout nome_branch       -----    Al posto di "nome_branch" bisogna scrivere il branch in cui si
+                                        vuole pubblicare il file
+	git add nome_file              -----    Al posto di "nome_file" bisogna scrivere il file che si
+                                        vuole pubblicare
+	git commit -m "Messaggio"      -----    Si scrive solitamente un messaggio (al posto di	"Messaggio") per 
+                                        commentare la propria proposta, usando meno di 50 parole
+	git push origin nome_branch    -----    Come sopra
+
+Per verificare si usa
+
+	git log                        -----    Scrive l'elenco delle modifiche (dovrebbe includere 
+      	                                        quella appena fatta
